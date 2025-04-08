@@ -1,0 +1,245 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:
+      "Inter",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    color: #2a4747;
+    line-height: 1.5;
+  }
+  
+  .page {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    background-color: #e8f5f5;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #008080;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    align-items: center;
+    gap: 100px;
+    color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+  }
+  
+  .nav {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .hero-title {
+    color: #2a4747;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-top: 62px;
+  }
+  
+  .hero-description {
+    color: #2a4747;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 29px;
+    max-width: 442px;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2;
+    cursor: pointer;
+  }
+  
+  .button-primary {
+    border-radius: 9999px;
+    background-color: #008080;
+    color: #ffffff;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 442px;
+    padding: 16px 70px;
+  }
+  
+  .button-primary:first-of-type {
+    margin-top: 45px;
+  }
+  
+  /* Featured section */
+  .featured {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .featured-title {
+    color: #2a4747;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-top: 62px;
+  }
+  
+  /* Newsletter section */
+  .newsletter {
+    border-radius: 8px;
+    background-color: #008080;
+    display: flex;
+    margin-top: 114px;
+    width: 100%;
+    max-width: 442px;
+    padding: 48px;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .newsletter-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    align-self: center;
+    max-width: 247px;
+  }
+  
+  .newsletter-description {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    align-self: center;
+    margin-top: 16px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .newsletter-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 0;
+    margin-top: 45px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .newsletter-input::placeholder {
+    color: #999999;
+  }
+  
+  .newsletter-input:focus {
+    outline: none;
+  }
+  
+  .button-subscribe {
+    border-radius: 9999px;
+    background-color: #004c4c;
+    color: #ffffff;
+    margin-top: 37px;
+    padding: 16px 70px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #004c4c;
+    align-self: stretch;
+    margin-top: 64px;
+    width: 100%;
+    padding: 32px 70px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Accessibility */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* Focus styles for accessibility */
+  a:focus,
+  button:focus,
+  input:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
+  
